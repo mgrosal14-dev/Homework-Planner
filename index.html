@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Planner V2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>📚 Homework Planner</h1>
+
+        <div class="dashboard">
+
+            <div class="card">
+
+                <h3>Total</h3>
+
+                <p id="totalCount">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Completed</h3>
+
+                <p id="completedCount">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Remaining</h3>
+
+                <p id="remainingCount">0</p>
+
+            </div>
+
+        </div>
+
+        <button id="themeBtn">
+            🌙 Dark Mode
+        </button>
+
+    </header>
+
+    <section class="form">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Homework Title">
+
+        <input
+            type="text"
+            id="subjectInput"
+            placeholder="Subject">
+
+        <input
+            type="date"
+            id="dateInput">
+
+        <button id="addBtn">
+            ➕ Add Homework
+        </button>
+
+        <button id="clearCompletedBtn">
+            🧹 Clear Completed
+        </button>
+
+    </section>
+
+        <select id="filterSelect">
+
+        <option value="all">📚 All Homework</option>
+
+        <option value="active">📝 Active</option>
+
+        <option value="completed">✅ Completed</option>
+
+    </select>
+
+    <button id="sortBtn">
+
+    📅 Sort by Due Date
+
+    </button>
+
+    <section class="search">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search homework...">
+
+    </section>
+
+    <section class="stats">
+
+        <h2 id="progress">
+            Completed: 0 / 0
+        </h2>
+
+    </section>
+
+    <section>
+
+        <p id="emptyMessage">
+            🎉 No homework yet.<br>
+            Add your first homework above!
+        </p>
+
+        <ul id="taskList"></ul>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+<footer>
+
+Made with ❤️ by Marc
+
+</footer>
+</body>
+</html>
